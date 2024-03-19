@@ -1,0 +1,36 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h2{
+           margin-top:20px;
+           font-size:30px;
+           }
+         h1{
+           font-size:50px;
+           }
+        input[type=submit]{
+        background-color:#000000;
+        color:white;
+        cursor:pointer;
+        padding : 8px 10px;
+        }
+        body{
+              background-image:url("{%static 'p.jpg'%}");
+              background-repeat:no-repeat;
+              background-attachment:fixed;
+              background-size:cover;
+        }
+    </style>
+</head>
+<body style="text-align:center">
+<h2>WELCOME TO</h2>
+<h1>Heart Prediction System</h1>
+<form action = "predict">
+    <input type = "submit" value = "START">
+</form>
+</body>
+</html>
